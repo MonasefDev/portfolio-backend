@@ -21,3 +21,7 @@ services:
         sync: false
       - key: WEB_CONCURRENCY
         value: 2 # sensible default
+      - key: SECRET_KEY_BASE
+        fromDatabase:
+          name: mysite
+          property: SECRET_KEY_BASE
