@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-User.create(username: 'user_1', password: '123456')
+User.create(username: 'user_5', password: '123456', role: 'admin')
 
 # Clear existing records
 Project.destroy_all
@@ -42,4 +42,4 @@ projects = [
 # Seed the projects
 projects.each { |project| Project.create!(project) }
 
-puts "Seed data has been created"
+# puts "Seed data has been created"
